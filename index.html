@@ -20,9 +20,51 @@
         nav a:hover { background: rgba(102, 102, 102, 0.7); }
         section { padding: 40px; max-width: 900px; margin: auto; background: rgba(0, 0, 0, 0.6); margin-top: 20px; border-radius: 8px; box-shadow: none; color: #fff; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); }
         h2 { color: #ffcc00; }
-        ul { text-align: left; display: inline-block; }
-        .contact-info { display: flex; flex-direction: column; align-items: center; }
-        .contact-info p { margin: 5px 0; }
+        .intro-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffcc00;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        .description {
+            font-size: 18px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .products-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            text-align: left;
+        }
+        .product-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .product-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+        .product-item h3 {
+            font-size: 20px;
+            color: #ffcc00;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .product-item p {
+            font-size: 16px;
+            margin-bottom: 0;
+            color: #f4f4f4;
+        }
+        .ending-text {
+            font-size: 18px;
+            margin-top: 30px;
+            font-weight: bold;
+            color: #ffcc00;
+        }
         footer { background: #222; color: white; padding: 15px; margin-top: 20px; }
     </style>
 </head>
@@ -39,55 +81,43 @@
     </nav>
     <section id="home">
         <h2>Welcome to Infinity Walls & Windows Designers</h2>
-        <p>🌟 <strong>Transform Your Home with Style & Functionality!</strong> 🌟</p>
-        <p>At <strong>Infinity Walls & Windows Designers</strong>, we specialize in providing high-quality solutions that enhance both the beauty and functionality of your home. Our extensive product range is designed to suit diverse styles and needs, including:</p>
-        <ul>
-            <li><strong>Premium Wallpapers</strong> – A variety of designs, including modern, classic, and customizable options.</li>
-            <li><strong>UPVC Windows Sales & Services</strong> – Durable, energy-efficient windows with professional installation and service.</li>
-            <li><strong>Window Grills & Invisible Grills</strong> – Combining safety and elegance for every home.</li>
-            <li><strong>Mosquito Mesh for Windows & Doors</strong> – Protect your home from pests without compromising ventilation.</li>
-            <li><strong>Door & Window Curtains</strong> – Tailored to your space and style, offering both privacy and aesthetic appeal.</li>
-            <li><strong>Pigeon Nets</strong> – Keep your home clean and secure with discreet, durable pigeon nets.</li>
-            <li><strong>Cloth Hangers</strong> – Practical, space-saving designs for everyday use.</li>
-        </ul>
-        <p>Whether you're looking for modern, classic, or bespoke designs, we offer tailored solutions that complement any space and style.</p>
-    </section>
-    <section id="about">
-        <h2>Why Choose Us?</h2>
-        <ul>
-            <li>✔️ High-Quality and Durable Materials – Crafted for long-lasting performance and aesthetics</li>
-            <li>✔️ Competitive Pricing – Exceptional value without compromising on quality</li>
-            <li>✔️ Customization Options – Designed to match your unique preferences and needs</li>
-            <li>✔️ Hassle-Free Installation and Reliable Support – Ensuring a seamless experience from start to finish</li>
-        </ul>
-    </section>
-    <section id="products">
-        <h2>✨ Featured Products ✨</h2>
-        <h3>🏡 Wallpapers</h3>
-        <p>🔹 Wide range of designs – Modern, Classic, 3D, and Custom Prints</p>
-        <p>🔹 High-quality, long-lasting, and easy to maintain</p>
-        <h3>🏠 UPVC Windows Sales & Services</h3>
-        <p>🔹 Energy-efficient, durable, and professionally installed</p>
-        <p>🔹 A variety of styles to suit your home</p>
-        <h3>🦟 Mosquito Mesh for Windows & Doors</h3>
-        <p>🔹 Keep mosquitoes out while letting fresh air in</p>
-        <p>🔹 Durable, rust-proof, and easy to install</p>
-        <h3>👕 Cloth Hangers & Drying Solutions</h3>
-        <p>🔹 Space-saving designs for home & balcony use</p>
-        <p>🔹 Sturdy and lightweight for everyday convenience</p>
-    </section>
-    <section id="contact" class="contact-info">
-        <h2>📞 Contact Us Today!</h2>
-        <p>📩 Email: dev4py@gmail.com</p>
-        <p>📲 WhatsApp: +91 9908391051</p>
-    </section>
-    <section id="quote">
-        <h2>📋 Get a Quote</h2>
-        <iframe src="https://forms.gle/wE6r8n5P8xW9JnF88" width="100%" height="900px" style="border: none;"></iframe>
-    </section>
-    <section id="schedule-visit">
-        <h2>📅 Schedule a Visit</h2>
-        <iframe src="https://forms.gle/YOUR_NEW_FORM_LINK" width="100%" height="900px" style="border: none;"></iframe>
+        <p class="intro-text">🌟 <strong>Transform Your Home with Style & Functionality!</strong> 🌟</p>
+        <p class="description">
+            At <strong>Infinity Walls & Windows Designers</strong>, we specialize in providing high-quality solutions that enhance both the beauty and functionality of your home. Our extensive product range is designed to suit diverse styles and needs, including:
+        </p>
+        <div class="products-list">
+            <div class="product-item">
+                <h3>🖼️ <strong>Premium Wallpapers</strong></h3>
+                <p>A variety of designs, including modern, classic, and customizable options.</p>
+            </div>
+            <div class="product-item">
+                <h3>🏠 <strong>UPVC Windows Sales & Services</strong></h3>
+                <p>Durable, energy-efficient windows with professional installation and service.</p>
+            </div>
+            <div class="product-item">
+                <h3>🔒 <strong>Window Grills & Invisible Grills</strong></h3>
+                <p>Combining safety and elegance for every home.</p>
+            </div>
+            <div class="product-item">
+                <h3>🦟 <strong>Mosquito Mesh for Windows & Doors</strong></h3>
+                <p>Protect your home from pests without compromising ventilation.</p>
+            </div>
+            <div class="product-item">
+                <h3>🚪 <strong>Door & Window Curtains</strong></h3>
+                <p>Tailored to your space and style, offering both privacy and aesthetic appeal.</p>
+            </div>
+            <div class="product-item">
+                <h3>🐦 <strong>Pigeon Nets</strong></h3>
+                <p>Keep your home clean and secure with discreet, durable pigeon nets.</p>
+            </div>
+            <div class="product-item">
+                <h3>👕 <strong>Cloth Hangers</strong></h3>
+                <p>Practical, space-saving designs for everyday use.</p>
+            </div>
+        </div>
+        <p class="ending-text">
+            Whether you're looking for modern, classic, or bespoke designs, we offer tailored solutions that complement any space and style. Let's create a home you'll love!
+        </p>
     </section>
     <footer>
         &copy; 2025 Infinity Walls & Windows Designers. All rights reserved.<br>
