@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Infinity Walls & Windows Designers - Transform your home with premium wallpapers, UPVC windows, mosquito mesh, and more.">
+    <meta name="keywords" content="wallpapers, UPVC windows, mosquito mesh, window grills, pigeon nets, curtains, home design">
+    <meta property="og:title" content="Infinity Walls & Windows Designers">
+    <meta property="og:description" content="Transform your home with premium designs and high-quality window solutions.">
     <title>Infinity Walls & Windows Designers</title>
     <style>
         body { 
@@ -12,6 +16,7 @@
             padding: 0; 
             background: url('wall1.webp') no-repeat center center fixed;
             background-size: cover;
+            background-color: #333;
             color: #fff;
         }
         header { background: rgba(34, 34, 34, 0.5); color: #fff; padding: 20px; font-size: 32px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); }
@@ -20,58 +25,26 @@
         nav a:hover { background: rgba(102, 102, 102, 0.7); }
         section { padding: 40px; max-width: 900px; margin: auto; background: rgba(0, 0, 0, 0.6); margin-top: 20px; border-radius: 8px; box-shadow: none; color: #fff; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); }
         h2 { color: #ffcc00; }
-        .intro-text {
-            font-size: 24px;
+        .cta-button {
+            display: inline-block;
+            padding: 12px 20px;
+            margin-top: 15px;
+            background: #ffcc00;
+            color: #222;
             font-weight: bold;
-            color: #ffcc00;
-            text-transform: uppercase;
-            margin-bottom: 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
         }
-        .description {
-            font-size: 18px;
-            margin-bottom: 30px;
-            line-height: 1.6;
-        }
-        .products-list {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            text-align: left;
-        }
-        .product-item {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 8px;
-            transition: background 0.3s, transform 0.3s;
-        }
-        .product-item:hover {
-            background: rgba(255, 255, 255, 0.2);
-            transform: translateY(-5px);
-        }
-        .product-item h3 {
-            font-size: 20px;
-            color: #ffcc00;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .product-item p {
-            font-size: 16px;
-            margin-bottom: 0;
-            color: #f4f4f4;
-        }
-        .ending-text {
-            font-size: 18px;
-            margin-top: 30px;
-            font-weight: bold;
-            color: #ffcc00;
+        .cta-button:hover { background: #e6b800; }
+        @media (max-width: 600px) {
+            .products-list { grid-template-columns: 1fr; }
         }
         footer { background: #222; color: white; padding: 15px; margin-top: 20px; }
     </style>
 </head>
 <body>
-    <header>
-        Infinity Walls & Windows Designers
-    </header>
+    <header>Infinity Walls & Windows Designers</header>
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About Us</a>
@@ -82,72 +55,31 @@
     <section id="home">
         <h2>Welcome to Infinity Walls & Windows Designers</h2>
         <p class="intro-text">🌟 <strong>Transform Your Home with Style & Functionality!</strong> 🌟</p>
-        <p class="description">
-            At <strong>Infinity Walls & Windows Designers</strong>, we specialize in providing high-quality solutions that enhance both the beauty and functionality of your home. Our extensive product range is designed to suit diverse styles and needs, including:
-        </p>
-        <div class="products-list">
-            <div class="product-item">
-                <h3>🖼️ <strong>Premium Wallpapers</strong></h3>
-                <p>A variety of designs, including modern, classic, and customizable options.</p>
-            </div>
-            <div class="product-item">
-                <h3>🏠 <strong>UPVC Windows Sales & Services</strong></h3>
-                <p>Durable, energy-efficient windows with professional installation and service.</p>
-            </div>
-            <div class="product-item">
-                <h3>🔒 <strong>Window Grills & Invisible Grills</strong></h3>
-                <p>Combining safety and elegance for every home.</p>
-            </div>
-            <div class="product-item">
-                <h3>🦟 <strong>Mosquito Mesh for Windows & Doors</strong></h3>
-                <p>Protect your home from pests without compromising ventilation.</p>
-            </div>
-            <div class="product-item">
-                <h3>🚪 <strong>Door & Window Curtains</strong></h3>
-                <p>Tailored to your space and style, offering both privacy and aesthetic appeal.</p>
-            </div>
-            <div class="product-item">
-                <h3>🐦 <strong>Pigeon Nets</strong></h3>
-                <p>Keep your home clean and secure with discreet, durable pigeon nets.</p>
-            </div>
-            <div class="product-item">
-                <h3>👕 <strong>Cloth Hangers</strong></h3>
-                <p>Practical, space-saving designs for everyday use.</p>
-            </div>
-        </div>
-        <p class="ending-text">
-            Whether you're looking for modern, classic, or bespoke designs, we offer tailored solutions that complement any space and style. Let's create a home you'll love!
-        </p>
+        <p class="description">At <strong>Infinity Walls & Windows Designers</strong>, we offer high-quality home improvement solutions tailored to your needs.</p>
+        <a href="#contact" class="cta-button">Get a Quote</a>
     </section>
 
-    <!-- About Us Section -->
     <section id="about">
         <h2>About Us</h2>
-        <p class="description">
-            Infinity Walls & Windows Designers is a leading provider of premium home improvement solutions. Our team is dedicated to offering exceptional products and services that elevate the aesthetic and functionality of your space. With years of experience in the industry, we understand the needs of our clients and provide personalized, professional designs that are both innovative and practical.
-        </p>
+        <p class="description">With years of experience, we specialize in premium home design solutions, ensuring elegance and functionality in every space.</p>
     </section>
 
-    <!-- Contact Us Section -->
     <section id="contact">
-    <h2>Contact Us</h2>
-    <p class="description">We would love to hear from you! Fill out the form below or reach us via the contact details provided.</p>
-    <p class="description">
-        <strong>Name:</strong> Mr. Sai<br>
-        <strong>Contact Number:8688663471</strong> <br>
-        <strong>Email:</strong> infinitywindows112@gmail.com
-    </p>
-    <p class="description">For inquiries, feedback, or service requests, please use the following form:</p>
-
-    <div class="form-container">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScClH9282kwkfRqz8o4vJ5ewd2W_fqDKbTKa0WMbTOyD8ZqxQ/viewform?usp=dialog" 
-            width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    </div>
-</section>
+        <h2>Contact Us</h2>
+        <p class="description">We would love to hear from you! Reach us via the contact details below.</p>
+        <p class="description">
+            <strong>Name:</strong> Mr. Sai<br>
+            <strong>Contact:</strong> <a href="tel:8688663471" style="color: #ffcc00; text-decoration: none;">8688663471</a><br>
+            <strong>Email:</strong> <a href="mailto:infinitywindows112@gmail.com" style="color: #ffcc00; text-decoration: none;">infinitywindows112@gmail.com</a>
+        </p>
+        <div class="form-container">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScClH9282kwkfRqz8o4vJ5ewd2W_fqDKbTKa0WMbTOyD8ZqxQ/viewform?usp=dialog" 
+                width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+    </section>
 
     <footer>
-        &copy; 2025 Infinity Walls & Windows Designers. All rights reserved.<br>
-        February 7, 2025
+        &copy; 2025 Infinity Walls & Windows Designers. All rights reserved.
     </footer>
 </body>
 </html>
