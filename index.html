@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Infinity Walls & Windows Designers - Premium home improvement solutions">
-    <meta name="keywords" content="wallpapers, UPVC windows, mosquito mesh, pigeon nets, cloth hangers">
-    <meta name="author" content="Infinity Walls & Windows Designers">
     <title>Infinity Walls & Windows Designers</title>
     <style>
         body { 
@@ -21,68 +18,136 @@
         nav { background: rgba(68, 68, 68, 0.5); padding: 15px; display: flex; justify-content: center; flex-wrap: wrap; }
         nav a { color: white; text-decoration: none; margin: 10px; font-size: 18px; padding: 10px 15px; border-radius: 5px; transition: background 0.3s; font-weight: bold; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); }
         nav a:hover { background: rgba(102, 102, 102, 0.7); }
-        section { padding: 40px; max-width: 900px; margin: auto; background: rgba(0, 0, 0, 0.6); margin-top: 20px; border-radius: 8px; color: #fff; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); }
+        section { padding: 40px; max-width: 900px; margin: auto; background: rgba(0, 0, 0, 0.6); margin-top: 20px; border-radius: 8px; box-shadow: none; color: #fff; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); }
         h2 { color: #ffcc00; }
-        .button { background: #ffcc00; color: #000; padding: 10px 20px; text-decoration: none; font-size: 18px; border-radius: 5px; transition: 0.3s; display: inline-block; }
-        .button:hover { background: #e6b800; }
+        .intro-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffcc00;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        .description {
+            font-size: 18px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .products-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            text-align: left;
+        }
+        .product-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .product-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+        .product-item h3 {
+            font-size: 20px;
+            color: #ffcc00;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .product-item p {
+            font-size: 16px;
+            margin-bottom: 0;
+            color: #f4f4f4;
+        }
+        .ending-text {
+            font-size: 18px;
+            margin-top: 30px;
+            font-weight: bold;
+            color: #ffcc00;
+        }
         footer { background: #222; color: white; padding: 15px; margin-top: 20px; }
     </style>
 </head>
 <body>
-    <header>Infinity Walls & Windows Designers</header>
+    <header>
+        Infinity Walls & Windows Designers
+    </header>
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About Us</a>
         <a href="#products">Products</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#services">Services</a>
-        <a href="#faq">FAQ</a>
         <a href="#contact">Contact Us</a>
     </nav>
+
     <section id="home">
         <h2>Welcome to Infinity Walls & Windows Designers</h2>
-        <p>Transform Your Home with Style & Functionality!</p>
-        <a href="#contact" class="button">Get a Quote</a>
+        <p class="intro-text">🌟 <strong>Transform Your Home with Style & Functionality!</strong> 🌟</p>
+        <p class="description">
+            At <strong>Infinity Walls & Windows Designers</strong>, we specialize in providing high-quality solutions that enhance both the beauty and functionality of your home. Our extensive product range is designed to suit diverse styles and needs, including:
+        </p>
+        <div class="products-list">
+            <div class="product-item">
+                <h3>🖼️ <strong>Premium Wallpapers</strong></h3>
+                <p>A variety of designs, including modern, classic, and customizable options.</p>
+            </div>
+            <div class="product-item">
+                <h3>🏠 <strong>UPVC Windows Sales & Services</strong></h3>
+                <p>Durable, energy-efficient windows with professional installation and service.</p>
+            </div>
+            <div class="product-item">
+                <h3>🔒 <strong>Window Grills & Invisible Grills</strong></h3>
+                <p>Combining safety and elegance for every home.</p>
+            </div>
+            <div class="product-item">
+                <h3>🦟 <strong>Mosquito Mesh for Windows & Doors</strong></h3>
+                <p>Protect your home from pests without compromising ventilation.</p>
+            </div>
+            <div class="product-item">
+                <h3>🚪 <strong>Door & Window Curtains</strong></h3>
+                <p>Tailored to your space and style, offering both privacy and aesthetic appeal.</p>
+            </div>
+            <div class="product-item">
+                <h3>🐦 <strong>Pigeon Nets</strong></h3>
+                <p>Keep your home clean and secure with discreet, durable pigeon nets.</p>
+            </div>
+            <div class="product-item">
+                <h3>👕 <strong>Cloth Hangers</strong></h3>
+                <p>Practical, space-saving designs for everyday use.</p>
+            </div>
+        </div>
+        <p class="ending-text">
+            Whether you're looking for modern, classic, or bespoke designs, we offer tailored solutions that complement any space and style. Let's create a home you'll love!
+        </p>
     </section>
+
+    <!-- About Us Section -->
     <section id="about">
         <h2>About Us</h2>
-        <p>Providing high-quality solutions to enhance the beauty and functionality of your home.</p>
+        <p class="description">
+            Infinity Walls & Windows Designers is a leading provider of premium home improvement solutions. Our team is dedicated to offering exceptional products and services that elevate the aesthetic and functionality of your space. With years of experience in the industry, we understand the needs of our clients and provide personalized, professional designs that are both innovative and practical.
+        </p>
     </section>
-    <section id="products">
-        <h2>Our Products</h2>
-        <p>We offer premium wallpapers, UPVC windows, mosquito mesh, pigeon nets, and more.</p>
-    </section>
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <p>Explore our work through these images.</p>
-        <img src="gallery1.jpg" alt="Gallery Image 1" width="100%">
-        <img src="gallery2.jpg" alt="Gallery Image 2" width="100%">
-    </section>
-    <section id="testimonials">
-        <h2>Customer Testimonials</h2>
-        <p>"Amazing service! Highly recommend." - Ramesh</p>
-        <p>"Great quality and affordable prices." - Priya</p>
-    </section>
-    <section id="services">
-        <h2>Our Services</h2>
-        <p>We provide installation, consultation, and customization services.</p>
-    </section>
-    <section id="faq">
-        <h2>Frequently Asked Questions</h2>
-        <p><strong>Q:</strong> Do you offer home delivery?</p>
-        <p><strong>A:</strong> Yes, we deliver and install at your convenience.</p>
-    </section>
+
+    <!-- Contact Us Section -->
     <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Reach out to us for inquiries and service requests.</p>
-        <p><strong>Name:</strong> Mr. Sai</p>
-        <p><strong>Contact Number:</strong> 8688663471</p>
-        <p><strong>Email:</strong> infinitywindows112@gmail.com</p>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScClH9282kwkfRqz8o4vJ5ewd2W_fqDKbTKa0WMbTOyD8ZqxQ/viewform?usp=dialog" width="100%" height="600" frameborder="0">Loading…</iframe>
-    </section>
+    <h2>Contact Us</h2>
+    <p class="description">We would love to hear from you! Fill out the form below or reach us via the contact details provided.</p>
+    <p class="description">
+        <strong>Name:</strong> Mr. Sai<br>
+        <strong>Contact Number:8688663471</strong> <br>
+        <strong>Email:</strong> infinitywindows112@gmail.com
+    </p>
+    <p class="description">For inquiries, feedback, or service requests, please use the following form:</p>
+
+    <div class="form-container">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScClH9282kwkfRqz8o4vJ5ewd2W_fqDKbTKa0WMbTOyD8ZqxQ/viewform?usp=dialog" 
+            width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+</section>
+
     <footer>
-        &copy; 2025 Infinity Walls & Windows Designers. All rights reserved.
+        &copy; 2025 Infinity Walls & Windows Designers. All rights reserved.<br>
+        February 7, 2025
     </footer>
 </body>
 </html>
