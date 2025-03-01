@@ -11,8 +11,20 @@
             padding: 0;
             background: url('wall1.webp') no-repeat center center fixed;
             background-size: cover;
+            background-color: rgba(255, 255, 255, 0.5);
             text-align: center;
             color: white;
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
         }
         .header {
             background-color: #004d99;
@@ -34,7 +46,7 @@
             padding: 20px;
         }
         .product-item {
-            background: white;
+            background: rgba(255, 255, 255, 0.8);
             color: black;
             padding: 15px;
             border-radius: 5px;
