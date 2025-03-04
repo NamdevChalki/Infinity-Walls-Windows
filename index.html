@@ -11,11 +11,11 @@
             padding: 0;
             background: url('wall1.webp') no-repeat center center fixed;
             background-size: cover;
-            background-color: rgba(255, 255, 255, 0.5);
             text-align: center;
             color: white;
             position: relative;
         }
+
         body::before {
             content: "";
             position: absolute;
@@ -26,6 +26,7 @@
             background: rgba(0, 0, 0, 0.5);
             z-index: -1;
         }
+
         .header {
             background-color: #004d99;
             color: white;
@@ -34,10 +35,12 @@
             align-items: center;
             justify-content: center;
         }
+
         .header img {
             height: 140px;
             margin-right: 20px;
         }
+
         .products-list {
             display: flex;
             flex-wrap: wrap;
@@ -45,6 +48,7 @@
             gap: 20px;
             padding: 20px;
         }
+
         .product-item {
             background: rgba(255, 255, 255, 0.8);
             color: black;
@@ -53,10 +57,12 @@
             width: 300px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
         .form-container {
             max-width: 600px;
             margin: auto;
         }
+
         footer {
             background: #004d99;
             color: white;
@@ -64,6 +70,15 @@
             position: relative;
             bottom: 0;
             width: 100%;
+        }
+
+        /* Fix for Android background issue */
+        @media (max-width: 768px) {
+            body {
+                background-attachment: scroll;
+                background-size: cover;
+                background-position: center;
+            }
         }
     </style>
 </head>
