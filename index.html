@@ -1,161 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infinity Walls & Windows Designers</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: url('wall1.webp') no-repeat center center fixed;
-            background-size: cover;
-            text-align: center;
-            color: white;
-            position: relative;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Infinity Walls & Windows Designers - Catalogs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+      margin: 0;
+      padding: 20px;
+    }
 
-        body::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: -1;
-        }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
 
-        .header {
-            background-color: #004d99;
-            color: white;
-            padding: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+    .description {
+      margin-bottom: 30px;
+      color: #555;
+    }
 
-        .header img {
-            height: 100px; /* Reduced size */
-            margin-right: 15px; /* Adjusted margin */
-        }
+    .products-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
 
-        .products-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
-        }
+    .product-item {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
 
-        .product-item {
-            background: rgba(255, 255, 255, 0.8);
-            color: black;
-            padding: 15px;
-            border-radius: 5px;
-            width: 300px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 400px;
+      border-radius: 10px;
+    }
 
-        .form-container {
-            max-width: 600px;
-            margin: auto;
-        }
-
-        footer {
-            background: #004d99;
-            color: white;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-
-        /* Fix for Android background issue */
-        @media (max-width: 768px) {
-            body {
-                background-attachment: scroll;
-                background-size: cover;
-                background-position: center;
-            }
-        }
-    </style>
+    @media (max-width: 600px) {
+      iframe {
+        height: 300px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header class="header">
-        <img src="mylogo.PNG" alt="Infinity Walls Logo">
-        <h1>Infinity Walls & Windows Designers</h1>
-    </header>
+  <h1>Infinity Walls & Windows Designers</h1>
 
-    <section>
-        <p class="description">
-            At <strong>Infinity Walls & Windows Designers</strong>, we specialize in providing high-quality solutions that enhance both the beauty and functionality of your home. Our extensive product range is designed to suit diverse styles and needs, including:
-        </p>
-        <div class="products-list">
-            <div class="product-item">
-                <h3>🏹 <strong>Premium Wallpapers</strong></h3>
-                <p>A variety of designs, including modern, classic, and customizable options.</p>
-            </div>
-            <div class="product-item">
-                <h3>🏠 <strong>UPVC Windows Sales & Services</strong></h3>
-                <p>Durable, energy-efficient windows with professional installation and service.</p>
-            </div>
-            <div class="product-item">
-                <h3>🔒 <strong>Window Grills & Invisible Grills</strong></h3>
-                <p>Combining safety and elegance for every home.</p>
-            </div>
-            <div class="product-item">
-                <h3>🧟 <strong>Mosquito Mesh for Windows & Doors</strong></h3>
-                <p>Protect your home from pests without compromising ventilation.</p>
-            </div>
-            <div class="product-item">
-                <h3>🛋 <strong>Door & Window Curtains</strong></h3>
-                <p>Tailored to your space and style, offering both privacy and aesthetic appeal.</p>
-            </div>
-            <div class="product-item">
-                <h3>🐧 <strong>Pigeon Nets</strong></h3>
-                <p>Keep your home clean and secure with discreet, durable pigeon nets.</p>
-            </div>
-            <div class="product-item">
-                <h3>👕 <strong>Cloth Hangers</strong></h3>
-                <p>Practical, space-saving designs for everyday use.</p>
-            </div>
-            <div class="product-item">
-                <h3>👞 <strong>Metal Shoe Rack</strong></h3>
-                <p>Durable and stylish storage solutions for your footwear.</p>
-            </div>
-        </div>
-        <p class="ending-text">
-            Whether you're looking for modern, classic, or bespoke designs, we offer tailored solutions that complement any space and style. Let's create a home you'll love!
-        </p>
-    </section>
+  <section id="wallpaper-catalogs">
+    <h2>📚 Wallpaper Catalogs</h2>
+    <p class="description">
+      Explore our wallpaper designs. View our exclusive collections below (view-only, not downloadable):
+    </p>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p class="description">
-            Infinity Walls & Windows Designers is a leading provider of premium home improvement solutions. Our team is dedicated to offering exceptional products and services that elevate the aesthetic and functionality of your space. With years of experience in the industry, we understand the needs of our clients and provide personalized, professional designs that are both innovative and practical.
-        </p>
-    </section>
+    <div class="products-list">
+      <div class="product-item">
+        <h3>📘 E JOY Vol 1</h3>
+        <iframe src="https://drive.google.com/file/d/FILE_ID_1/preview" allow="autoplay"></iframe>
+      </div>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p class="description">We would love to hear from you! Fill out the form below or reach us via the contact details provided.</p>
-        <p class="description">
-            <strong>Name:</strong> Mr. Sai<br>
-            <strong>Contact Number:</strong> 8688663471<br>
-            <strong>Email:</strong> infinitywindows112@gmail.com
-        </p>
-        <p class="description">For inquiries, feedback, or service requests, please use the following form:</p>
-        <div class="form-container">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScClH9282kwkfRqz8o4vJ5ewd2W_fqDKbTKa0WMbTOyD8ZqxQ/viewform?usp=dialog" 
-                width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </div>
-    </section>
+      <div class="product-item">
+        <h3>📘 ENIGMA-1</h3>
+        <iframe src="https://drive.google.com/file/d/FILE_ID_2/preview" allow="autoplay"></iframe>
+      </div>
 
-    <footer>
-        &copy; 2025 Infinity Walls & Windows Designers. All rights reserved.<br>
-        February 7, 2025
-    </footer>
+      <div class="product-item">
+        <h3>📘 Silk-2</h3>
+        <iframe src="https://drive.google.com/file/d/FILE_ID_3/preview" allow="autoplay"></iframe>
+      </div>
+
+      <div class="product-item">
+        <h3>📘 BROOKLYN-1</h3>
+        <iframe src="https://drive.google.com/file/d/FILE_ID_4/preview" allow="autoplay"></iframe>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
